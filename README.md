@@ -27,15 +27,16 @@ WantedBy=multi-user.target
 ```
 
 ### 2. create file /usr/lib/tmpfiles.d/docker-compose.conf
-
+```
 d /var/run/docker-compose 0755 root root -
+```
 
 ### 3. Make directory /var/run/docker-compose
 
 ### 4. Set up systemctl 
-
+```
 systemctl status docker-compose
 systemctl enable docker-compose
 systemctl -l status docker-compose
 systemctl start docker-compose 
-
+```
