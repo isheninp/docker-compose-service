@@ -1,7 +1,7 @@
 # How to make docker-compose running as service (Centos 7)
 
 ### 1. create file /etc/systemd/system/docker-compose.service
-`
+
 [Unit]
 Description=docker-compose
 Requires=docker.service
@@ -24,7 +24,7 @@ TimeoutStartSec=0
 
 [Install]
 WantedBy=multi-user.target
-`
+
 
 ### 2. create file /usr/lib/tmpfiles.d/docker-compose.conf
 
